@@ -16,7 +16,6 @@ html, body {
     margin: 0;
     color: white;
     background-color: #263238;
-    text-align: center;
     scroll-behavior: smooth;
 }
 
@@ -158,6 +157,7 @@ section {
 /* Header */
 
 #profile {
+    text-align: center;
     color: #263238;
     padding: 64px 0 32px 0;
     display: flex;
@@ -180,6 +180,7 @@ section {
 /* About */
 
 #about {
+    text-align: center;
     flex-direction: row;
 }
 
@@ -193,17 +194,9 @@ section {
 }
 
 /* Main */
-/* Experience */
-
-#experience {
-    text-align: start;
-}
-
-/* Main */
 /* Projects */
 
 .photo-card {
-    text-align: start;
     align-items: flex-start;
     margin-top: 8px;
 }
@@ -211,6 +204,22 @@ section {
 .photo-card > * {
     width: 50%;
     flex-direction: column;
+}
+
+.tech-card {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.tech-card > * {
+    margin-top: 8px;
+}
+
+.tech-card a {
+    color: #263238;
+    background-color: white;
+    padding: .5em;
 }
 
 /* Animation by Ian Forrest */
