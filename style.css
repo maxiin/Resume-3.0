@@ -1,0 +1,247 @@
+/* Declarations */
+
+@font-face {
+    font-family: Raleway;
+    src: url(./fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: url(./fonts/Philosopher-Regular.ttf);
+}
+
+/* Defaults */
+
+html, body {
+    margin: 0;
+    color: white;
+    background-color: #263238;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+li div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+li div > * {
+    margin-right: 8px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ol li {
+    align-items: flex-start;
+    position: relative;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-left: 20px;
+}
+
+ol li:before {
+    content: '';
+    background-color: #455A64;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 6px;
+    width: 3px;
+}
+  
+ol li:after {
+    content: 'º';
+    font-size: 27px;
+    position: absolute;
+    left: 0;
+    height: 15px;
+    width: 15px;
+}
+
+li > * {
+    display: block;
+    margin-right: 8px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: .875rem;
+}
+
+p {
+    font-family: Philosopher;
+    font-size: 1rem;
+}
+
+small {
+    font-family: Philosopher;
+}
+
+a {
+    text-decoration: inherit;
+    display: flex;
+    color: inherit;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Overused Classes */
+
+.container {
+    padding: 32px 0 32px 0;
+    display: flex;
+    max-width: 38em;
+    flex-direction: column;
+}
+
+.container > * {
+    display: flex;
+    margin: 16px;
+}
+
+/* Nav */
+
+#nav {
+    position: fixed;
+    top: 0px;
+    background-color: #263238;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5em 8px .5em 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-butons {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-butons > * {
+    margin-right: 8px;
+}
+
+/* Header */
+
+#profile {
+    color: #263238;
+    padding: 64px 0 32px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#profile h2 {
+    color: #455A64;
+    max-width: 20em;
+}
+
+/* Main */
+/* About */
+
+#about {
+    flex-direction: row;
+}
+
+#about > * {
+    margin-right: 16px;
+}
+
+.link img {
+    height: 32px;
+    width: 32px;
+}
+
+/* Main */
+/* Experience */
+
+#experience {
+    text-align: start;
+}
+
+/* Main */
+/* Projects */
+
+.photo-card {
+    text-align: start;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.photo-card > * {
+    width: 50%;
+    flex-direction: column;
+}
+
+/* Animation by Ian Forrest */
+
+.flg-animation {
+    background: linear-gradient(133deg, #55cdfc, #ffffff, #f7a8b8);
+    background-size: 600% 600%;
+
+    -webkit-animation: GradientAnim 46s ease infinite;
+    -moz-animation: GradientAnim 46s ease infinite;
+    -o-animation: GradientAnim 46s ease infinite;
+    animation: GradientAnim 46s ease infinite;
+}
+
+@-webkit-keyframes GradientAnim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-moz-keyframes GradientAnim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@keyframes GradientAnim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-o-keyframes GradientAnim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
