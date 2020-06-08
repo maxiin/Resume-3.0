@@ -206,6 +206,15 @@ section {
     flex-direction: column;
 }
 
+.photo-card img {
+    filter: grayscale(100%) opacity(50%);
+    transition: all 1s ease;
+}
+
+.photo-card img:hover {
+    filter: grayscale(0%) opacity(100%);
+}
+
 .tech-card {
     width: 100%;
     align-items: flex-start;
