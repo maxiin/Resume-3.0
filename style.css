@@ -180,7 +180,6 @@ section {
 /* About */
 
 #about {
-    text-align: center;
     flex-direction: row;
 }
 
