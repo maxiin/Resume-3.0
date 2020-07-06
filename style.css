@@ -93,6 +93,7 @@ h5 {
 p {
     font-family: Philosopher;
     font-size: 1rem;
+    margin: 0 0 8px 0;
 }
 
 small {
@@ -114,6 +115,15 @@ main {
 section {
     display: flex;
     flex-direction: column;
+}
+
+hr {
+    width: 100%;
+    color: #455A64;
+}
+
+i {
+    margin-right: 8px;
 }
 
 /* Overused Classes */
@@ -187,9 +197,8 @@ section {
     margin-right: 16px;
 }
 
-.link img {
-    height: 32px;
-    width: 32px;
+.link i {
+    font-size: 32px;
 }
 
 /* Main */
