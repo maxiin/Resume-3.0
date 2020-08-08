@@ -1,42 +1,44 @@
 canvas = document.getElementById("canvas");
-c = canvas.getContext("2d");
+ctx = canvas.getContext("2d");
 
 step = 10;
 x = y = 0;
 
+// 10print.org
+// 10 PRINT CHR$(205.5+RND(1)); : GOTO 10
 function draw() {
-	c.beginPath();
+	ctx.beginPath();
   if (Math.random() < 0.5) {
-    c.moveTo(0, 0);
-    c.lineTo(step, step);
+    ctx.moveTo(0, 0);
+    ctx.lineTo(step, step);
   } else {
-    c.moveTo(step, 0);
-    c.lineTo(0, step);
+    ctx.moveTo(step, 0);
+    ctx.lineTo(0, step);
   }
-  c.strokeStyle = `rgb(255,255,255)`;
-  c.stroke();
+  ctx.strokeStyle = `white`;
+  ctx.stroke();
   if (x < canvas.width) {
-    c.translate(step, 0);
+    ctx.translate(step, 0);
     x += step;
   } else {
-    c.translate(-canvas.width, step);
+    ctx.translate(-canvas.width, step);
     x = 0;
     y += step;
   }
   if (y > canvas.height) {
     clearTimeout(up);
     x = y = 0;
-    c.setTransform(1,0,0,1,0,0);
-    c.clearRect(0,0,canvas.height,canvas.width);
-    update();
+    ctx.setTransform(1,0,0,1,0,0);
+    ctx.clearRect(0,0,canvas.height,canvas.width);
+    start();
   }
 }
 
-function update() {
+function start() {
     canvas.width = window.innerWidth - (window.innerWidth % 10);
     canvas.height = 324;
     up = setInterval(draw, 10);
 }
 
 console.error('a')
-update();
+start();
