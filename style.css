@@ -19,6 +19,11 @@ html, body {
     scroll-behavior: smooth;
 }
 
+canvas {
+    margin-top: -26px;
+    position: absolute;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Raleway;
     margin-top: 0;
@@ -184,6 +189,10 @@ i {
 #profile h2 {
     color: #455A64;
     max-width: 20em;
+}
+
+.header-container {
+    z-index: 1;
 }
 
 /* Main */
