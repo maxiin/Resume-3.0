@@ -252,7 +252,7 @@ i {
 /* Animation by Ian Forrest */
 
 .flg-animation {
-    background: linear-gradient(133deg, #55cdfc, #ffffff, #f7a8b8);
+    background: linear-gradient(133deg, #55cdfc, #55cdfc, #55cdfc, #ffffff, #f7a8b8, #f7a8b8, #f7a8b8);
     background-size: 600% 600%;
 
     -webkit-animation: GradientAnim 46s ease infinite;
